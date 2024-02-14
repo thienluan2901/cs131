@@ -152,3 +152,14 @@
   152  git push -u origin master
   153  git push -f origin master
   154  history > cmds.log
+  155  ls
+  156  git push origin master
+  157  git add cmds.log
+  158  git status
+  159  git commit -m "Adding history file to GitHub repo"
+  160  git push origin master
+  161  git init
+  162  ls
+  163  rm cmds.log
+  164  ls
+  165  history > cmds.log

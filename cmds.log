@@ -1,0 +1,154 @@
+    1  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/spotify-2023.csv
+    2  vi - spotify-2023.csv
+    3  vi spotify-2023.csv
+    4  wget www.github.com
+    5  history > cmds.log
+    6  touch cmds.log
+    7  ls
+    8  git status
+    9  git add cmds.log
+   10  cd cs131
+   11  cd CS131
+   12  cd ~/Desktop
+   13  cd CS131
+   14  mkdir worksheet1
+   15  cd worksheet1/
+   16  git status
+   17  git init
+   18  touch cmds.log
+   19  ls
+   20  git status
+   21  git add cmds.log
+   22  git status
+   23  git commit -m "Adding history file to Worksheet1 on GitHub"
+   24  git config --global user.name thienluan2901
+   25  git commit -m "Adding history file to Worksheet1 on GitHub"
+   26  git status
+   27  ls
+   28  git status
+   29  touch git add cmds.log
+   30  git status
+   31  git add cmds.log
+   32  git status
+   33  touch cmds.log
+   34  ls
+   35  git commit - "adding history"
+   36  git commit -m "adding history"
+   37  ls
+   38  del "add"
+   39  clear
+   40  wget www.github.com
+   41  history > cmds.log
+   42  ls
+   43  git status
+   44  git add cmds.log
+   45  git status
+   46  git commit -m "Adding history file to Worksheet1"
+   47  git push origin main
+   48  git push origin subbranch
+   49  git remote add origin https://github.com/thienluan2901/cs131/blob/main/Worksheet1
+   50  git push -u origin main
+   51  git remote add origin https://github.com/thienluan2901/cs131/tree/main.git
+   52  git push origin main
+   53  git status
+   54  git add cmds.log
+   55  git status
+   56  ls
+   57  git push -u origin master
+   58  passwd
+   59  wget www.github.com
+   60  git--version
+   61  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   62  brew install git-gui
+   63  wget www.github.com
+   64  cd~/Desktop
+   65  mkdir worksheet1
+   66  cd worksheet1/
+   67  git init
+   68  ls
+   69  rm add
+   70  ls
+   71  rm git
+   72  rm index.html
+   73  ls
+   74  git status
+   75  rm cmds.log
+   76  ls
+   77  wget www.github.com
+   78  ls
+   79  history > cmds.log
+   80  ls
+   81  touch newfile.txt
+   82  ls
+   83  git status
+   84  git add cmds.log
+   85  git status
+   86  git commit -m "Adding file to worksheet on Github"
+   87  git push origin master
+   88  git remote add origin https://github.com/thienluan2901/cs131.git
+   89  git push -u origin master
+   90  git push -u origin main
+   91  git remote remove origin https://github.com/thienluan2901/cs131.git
+   92  git remote remove https://github.com/thienluan2901/cs131.git
+   93  ls
+   94  git init
+   95  wget www.github.com
+   96  history > cmds.log
+   97  ls
+   98  git add cmds.log
+   99  git status
+  100  git commit -m "Adding file to Worksheet1 directory"
+  101  git remote add origin https://github.com/thienluan2901/cs131/blob/master/Worksheet1.git
+  102  git remote remove origin
+  103  git remote add origin https://github.com/thienluan2901/cs131/blob/master/Worksheet1.git
+  104  git push -u origin master
+  105  git remote remove origin
+  106  git remote add origin https://github.com/thienluan2901/cs131/Worksheet1.git
+  107  git push -u origin master
+  108  git remote remove origin
+  109  git remote add origin https://github.com/thienluan2901/cs131/Worksheet1
+  110  git push -u origin master
+  111  git remote remove origin
+  112  git remote add origin https://github.com/thienluan2901/cs131/Worksheet1
+  113  git remote remove origin
+  114  git remote add origin https://github.com/thienluan2901/cs131/Worksheet1
+  115  git remote remove origin
+  116  git remote add origin https://github.com/thienluan2901/cs131.git
+  117  git push -u origin master
+  118  git remote remove origin
+  119  git remote add origin https://github.com/thienluan2901/cs131/tree/master/Worksheet1.git
+  120  git push -u origin master
+  121  git push origin master
+  122  ls
+  123  git add cmds.log
+  124  git init
+  125  git add cmds.log
+  126  git status
+  127  git commit -m "Adding file to GitHub" 
+  128  git push origin master
+  129  git branch
+  130  git checkout-b worksheet1
+  131  git checkout -b worksheet1
+  132  git branch
+  133  git remote add origin https://github.com/thienluan2901/cs131.git
+  134  git push -u origin master
+  135  git push origin master
+  136  wget www.github.com
+  137  mkdir Worksheet1
+  138  cd Worksheet1/
+  139  git init
+  140  touch newfile.txt
+  141  ls
+  142  git status
+  143  git add newfile.txt
+  144  git status
+  145  git commit -m "This is my first commit"
+  146  git checkout -b sub-branch
+  147  git branch
+  148  git remote add origin https://github.com/thienluan2901/cs131.git
+  149  git push -u origin master
+  150  git status
+  151  git checkout master
+  152  git push -u origin master
+  153  git push -f origin master
+  154  history > cmds.log

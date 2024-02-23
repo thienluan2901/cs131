@@ -1,0 +1,2 @@
+238 grepMusicOutput.txt //There is 238 lines is counted in record of "Music" category
+830 grepMusicOutput.txt //There is 830 words is counted in record of "Music" category

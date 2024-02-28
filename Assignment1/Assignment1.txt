@@ -1,0 +1,66 @@
+//Question 2 - Shell
+
+/bin/bash
+
+// There is the type of Shell that my OS use
+//I get it by command echo $SHELL
+
+//Question 2 - Home directory
+
+/mnt/scratch/SP24_CS131_Jyotika/daosp24
+
+//There is my home directory path
+//I get it by using command echo $HOME
+
+//Question 3 - UID
+
+uid=1227(daosp24) gid=1227(daosp24) groups=1227(daosp24),78(S78)
+
+//My UID is 1227, and I belong to two groups which are daosp24 and S78
+
+//Question 4
+
+-rw-rw-r-- 1 daosp24 daosp24  115 Feb 27 21:29 Assignment1.txt
+dr-xrwxr-x 2 daosp24 daosp24 4096 Feb 27 21:30 myDir
+
+/* The ls -l output above shows that myDir writing permission was removed
+for owner.
+From myDir, I am allowed to perform  cd, ls, and ls -l command, but I am not allowed to create files under it. */
+
+//Question 6 - Ram/Memory
+
+              total        used        free      shared  buff/cache   available
+Mem:          71367       31997       20371        3536       18998       34375
+Swap:          4119           0        4119
+
+//The total Ram/Memory in the IBM VM is 71367 MiB
+
+//Question 9
+
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+
+//My OS version is Red Hat Enterprise Linux version 8.6
+//The file contains this information under /etc is /os-release
+
+//Question 10
+
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
+
+//This file give full permission to all users
+

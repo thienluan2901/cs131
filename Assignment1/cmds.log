@@ -1,0 +1,39 @@
+  547  mkdir Assignment1
+  548  cd Assignment1      		    //Create Assignment1 dir command 
+  549  echo $SHELL
+  550  echo $SHELL > Assignment1.txt        //Echo current Shell command
+  551  echo $HOME >> Assignment1.txt 	    //Echo home dir path command
+  552  cat Assignment1.txt 
+  553  id >> Assignment1.txt 		    //Find UID&Groups command
+  554  cat Assignment1.txt 
+  555  mkdir myDir			    //Create myDir dir command
+  556  cd myDir
+  557  chmod u-w myDir			    //Remove write permission command
+  558  cd ..
+  559  chmod u-w myDir
+  560  ls -l >> Assignment1.txt 
+  561  cat Assignment1.txt 
+  562  mkdir myDir2 myDir3 		    //Create myDir2 and myDir3 command
+  563  ls
+  564  cd myDir2
+  565  touch myFile.txt			    //Create myFile.txt command
+  566  cd ..
+  567  cd myDir3
+  568  pwd
+  569  cd /daosp24/cs131/Assignment1/myDir2
+  570  cd ..
+  571  cd myDir2
+  572  mv myFile.txt /mnt/scratch/SP24_CS131_Jyotika/daosp24/cs131/Assignment1/myDir3   //move myFile.txt from myDir2 to myDir3 command
+  573  ls
+  574  cd ..
+  575  cat myDir3
+  576  ls myDir3
+  577  free -m >> Assignment1.txt 	    //Find and display the Ram/memory of IBM VM in mebibytes command
+  578  cat Assignment1.txt 
+  579  cat /etc/os-release >> Assignment1.txt       //Identify the OS version command
+  580  cat Assignment1.txt 
+  581  ls -l /etc/os-release >> Assignment1.txt     //Checking the permission of the file containing the OS version command
+  582  cat Assignment1.txt 
+  583  vi Assignment1.txt 
+  584  history > cmds.log
+  585  vi cmds.log

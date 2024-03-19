@@ -3,11 +3,11 @@
   624  mkdir Assignment2
   625  cd Assignment2
   626  touch Assignment2
-  627  find /etc -type f > one.txt 2> two.txt
+  627  find /etc -type f > one.txt 2> two.txt	//Question 1
   628  ls
   629  vi Assignment2 
-  630  cat one.txt
-  631  cat two.txt 
+  630  cat one.txt				//Question 1
+  631  cat two.txt 				//Question 1	
   632  vi Assignment2.txt
   633  ls
   634  mv Assignment2 Assignment2.txt
@@ -17,19 +17,19 @@
   638  ls
   639  cat 'Global YouTube Statistics.csv' 
   640  cut -d',' -f21,20 your_file.csv | awk -F',' '{print $1 "-" $2}' | sort | uniq -c | sort -nr | head -n 1
-  641  cut -d',' -f21,20 'Global YouTube Statistics.csv' | awk -F',' '{print $1 "," $2}' | sort | uniq -c | sort -nr | head -n 3
+  641  cut -d',' -f21,20 'Global YouTube Statistics.csv' | awk -F',' '{print $1 "," $2}' | sort | uniq -c | sort -nr | head -n 3		//Question 2
   642  vi Assignment2.txt 
   643  ls
   644  cd cs131/Assignment2
   645  ls
   646  vi Assignment2.txt 
-  647  ps -u daosp24
+  647  ps -u daosp24			//Question 3
   648  ps -u $(whoami)
   649  ps -u daosp24 >> Assignment2.txt 
   650  vi Assignment2.txt 
-  651  vi file.txt
+  651  vi file.txt			//Question 4
   652  vi Assignment2.txt 
-  653  ps -x
+  653  ps -x				//Question 4
   654  ps -q 1 -o pid=
   655  ps -g systemd
   656  ps -G systemd
@@ -38,7 +38,7 @@
   659  clear
   660  vi Assignment2.txt 
   661  ps -g 1 >> Assignment2.txt 
-  662  ps -p 1
+  662  ps -p 1				//Question 5
   663  ps -g 1
   664  vi Assignment2.txt 
   665  history > cmds.log

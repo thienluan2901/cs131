@@ -1,0 +1,71 @@
+Question 1
+a. 
+find /etc -type f > one.txt 2> two.txt 
+This command line is used to search for files in the /etc directory (and its subdirectories) and redirect the output to two different files, one.txt with standard output and two.txt with standard error
+
+b.
+In one.txt, we can see the list of file in etc directory and its sub-directory which we have permission to access and read. In two.txt it displays the files in etc that we don't have the permission to access or read.
+
+Question 2
+1. March, 2006 with 15 channels
+2. July, 2014 with 13 channels
+3. August 2014 with 12 channels
+
+The commands used to find it was this:
+$cut -d',' -f20,21 'Global YouTube Statistics.csv' | awk -F',' '{print $2, $1}' | sort | uniq -c | sort -nr | head -n 3
+
+1. cut command extract the created year and created month from the csv file
+2. awk command is used for reformatting the output in order month,year to prepare for sort
+3. sort command used to sort the combination month,year in alphabetically
+4. uniq -c command to count the identical of each unique combination month,year
+5. sort -nr command to sort the counts in descending order to bring the most frequent combination to the top
+6. head -n 3 command to display the top 3 combination of month,year that have the most created channels
+
+Question 3
+I use the command $ps -u daosp24 to find all the processes owned by me, and there is the output of this command
+
+    PID TTY          TIME CMD
+3076322 ?        00:00:00 systemd
+3076325 ?        00:00:00 (sd-pam)
+3076331 ?        00:00:00 sshd
+3076333 pts/1    00:00:00 bash
+3079528 pts/1    00:00:00 ps
+
+Question 4
+
+    PID TTY          TIME CMD
+3076322 ?        00:00:00 systemd
+3076325 ?        00:00:00 (sd-pam)
+3076331 ?        00:00:00 sshd
+3076333 pts/1    00:00:00 bash
+3080264 ?        00:00:00 sshd
+3080265 pts/2    00:00:00 bash
+3080957 pts/1    00:00:00 vim
+3081033 pts/2    00:00:00 ps
+A process was added. It’s vim process which has id 3080957
+
+
+    PID TTY          TIME CMD
+3076322 ?        00:00:00 systemd
+3076325 ?        00:00:00 (sd-pam)
+3076331 ?        00:00:00 sshd
+3076333 pts/1    00:00:00 bash
+3080264 ?        00:00:00 sshd
+3080265 pts/2    00:00:00 bash
+3083105 pts/2    00:00:00 ps
+I noticed that the process vim was gone because of my closing vim in terminal 1.One more change is the PID of the last ps process was changed also. It's different because it represent to two different ps process
+
+
+Question 5
+
+The init process is the first process started by the kernel and has a PID of 1. It is responsible for starting and managing all other processes during the system's lifetime.
+
+To find process id for the init process i do the command $ps -p 1, and this is the output: 
+
+    PID TTY          TIME CMD
+      1 ?        13:53:09 systemd
+
+Question 6
+
+The ps aux command displays information about all running processes. It can provide a comprehensive list of processes in a user-friendly format, including their process IDs (PIDs), CPU and memory usage, execution states, and other vital details.
+

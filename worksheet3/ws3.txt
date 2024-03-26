@@ -1,0 +1,13 @@
+Task 1:
+United States,9200000	
+United Kingdom,2000000
+India,9000000
+
+The output of this task show the most highest monthly earning of 3 country US, UK, and India
+
+Task 2:
+Sports 96000000
+Education 162000000
+Entertainment 166000000
+
+The output of this task show the most subcribers that a channel in this category have

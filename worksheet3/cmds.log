@@ -1,0 +1,41 @@
+  755  vi Global\ YouTube\ Statistics.csv 
+  756  cd cs131
+  757  ls
+  758  mkdir worksheet3
+  759  cd worksheet3
+  760  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  761  ls
+  762  cd cs131/worksheet3
+  763  cat Global\ YouTube\ Statistics.csv 
+  764  cd cs131/worksheet3
+  765  ls
+  766  cd cs131/worksheet3
+  767  cut -d',' -f 8,16 Global\ YouTube\ Statistics.csv | grep "United States" | sort -t',' -k2 -nr | head -n 1 >> ws3.txt		//I use this command to get highest monthly earning from United States
+  768  ls
+  769  cat cs3.txt
+  770  cat ws3.txt 
+  771  cut -d',' -f 8,16 Global\ YouTube\ Statistics.csv | grep "United Kingdom" | sort -t',' -k2 -nr | head -n 1 >> ws3.txt	//I use this command to get highest monthly earning from United Kingdom
+  772  cut -d',' -f 8,16 Global\ YouTube\ Statistics.csv | grep "India" | sort -t',' -k2 -nr | head -n 1 >> ws3.txt		//I use this command to get highest monthly earning from India
+  773  cat ws3.txt 
+  774  cut -d',' -f 3,5 Global\ YouTube\ Statistics.csv | awk -F',' '{print $2, $1}' | grep "Music" | sort -t',' -k2 -nr | head -n 1 >> ws3.txt 
+  775  cat ws3.txt 
+  776  cut -d',' -f 3,5 Global\ YouTube\ Statistics.csv | awk -F',' '{print $2, $1}' | grep "Sport" | sort -t',' -k2 -nr | head -n 1 >> ws3.txt 	//I use this command to get highest subcribers from Sports
+  777  cut -d',' -f 3,5 Global\ YouTube\ Statistics.csv | awk -F',' '{print $2, $1}' | grep "Education" | sort -t',' -k2 -nr | head -n 1 >> ws3.txt 	
+  778  cut -d',' -f 3,5 Global\ YouTube\ Statistics.csv | awk -F',' '{print $2, $1}' | grep "Entertainment" | sort -t',' -k2 -nr | head -n 1 >> ws3.txt 
+  779  cat ws3.txt 
+  780  cut -d',' -f 3,5 Global\ YouTube\ Statistics.csv | awk -F',' '{print $2, $1}' | grep "Education" 
+  781  cut -d',' -f 3,5 Global\ YouTube\ Statistics.csv | awk -F',' '{print $2, $1}' | grep "Sport"" 
+  782  cut -d',' -f 3,5 Global\ YouTube\ Statistics.csv | awk -F',' '{print $2, $1}' | grep "Sport" 
+  783  cut -d',' -f 3,5 Global\ YouTube\ Statistics.csv | awk -F',' '{print $2, $1}' | grep "Entertainment" 
+  784  cut -d',' -f 3,5 Global\ YouTube\ Statistics.csv | awk -F',' '{print $2, $1}' | grep "Sports" | head -n 1 >> ws3.txt 	////I use this command to get highest subcribers from Spor
+ts
+  785  cut -d',' -f 3,5 Global\ YouTube\ Statistics.csv | awk -F',' '{print $2, $1}' | grep "Education" | head -n 1 >> ws3.txt   //I use this command to get highest subcribers from Education 
+  786  cut -d',' -f 3,5 Global\ YouTube\ Statistics.csv | awk -F',' '{print $2, $1}' | grep "Entertainment" | head -n 1 >> ws3.txt //I use this command to get highest subcribers from Entertainment
+  787  cat ws3.txt 
+  788  vi
+  789  vi ws3.txt 
+  790  tail -n 100  history > history.log
+  791  history > history.log
+  792  tail -n 100 history.log > history.log 
+  793  vi history.log 
+  794  history > history.log 

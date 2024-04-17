@@ -1,0 +1,191 @@
+  841  mkdir Assignment3
+  842  cd Assignment3
+  843  last
+  844  last | grep daosp24
+  845  last | grep eric
+  846  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/last.fake
+  847  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
+  848  ls
+  849  cat last.fake 
+  850  grep daosp24 last.fake 
+  851  wc -l last.fake 
+  852  ls
+  853  cd cs131/Assignment3
+  854  ls
+  855  cat last.fake 
+  856  clear
+  857  ls
+  858  cat passwd.fake 
+
+//Task 1: 1
+************************  
+  859  wc -l last.fake
+************************ 
+
+  860  touch Assignment3.txt
+
+//Task 1: 2 and 3
+*************************************************** 
+  861  sed -n '/sp24/p' last.fake > lastsp24.fake
+  862  wc -l lastsp24.fake 
+***************************************************
+
+  863  vi Assignment3.txt 
+  864  cat lastsp24.fake >> Assignment3.txt 
+  865  vi Assignment3.txt 
+  866  cd cs131/Assignment3
+  867  vi Assignment3.txt 
+  868  cat Assignment3.txt 
+  869  clear
+  870  wc -l lastsp24.fake 
+  871  cat lastsp24.fake 
+  872  grep Sun lastsp24.fake 
+  873  awk '/Sun/ {print}' lastsp24.fake 
+  874  awk '/Sun/ {print $1}' lastsp24.fake 
+  875  awk '/Sun/ { print}' lastsp24.fake 
+  876  awk '/Sun/ {print $1 | uniq }' lastsp24.fake 
+  877  awk '/Sun/ {print $1 ; uniq }' lastsp24.fake 
+  878  awk '/Sun/ {uniq $1 }' lastsp24.fake 
+  879  awk '/Sun/ {uniq $1 ; print}' lastsp24.fake 
+  880  awk '/Sun/ {uniq $1 ; print $1}' lastsp24.fake 
+  881  awk '/Sun/ {print $1}' lastsp24.fake | uniq 
+  882  awk '/Sun/ {print $1 ; uniq }' lastsp24.fake 
+  883  awk '/Sun/ { }' lastsp24.fake 
+  884  awk '/Sun/ {print $0 ; uniq }' lastsp24.fake 
+  885  awk '/Sun/ {print $1 } {uniq}' lastsp24.fake 
+  886  awk '/Sun/ {print $1}' lastsp24.fake | sort -u 
+  887  awk '/Sun/ {print $1}' lastsp24.fake | uniq 
+  888  awk '/Sun/ {print $1}' lastsp24.fake | sort
+  889  awk '/Sun/ {print $1}' lastsp24.fake | sort | uniq
+  890  awk '/Sun/ {print $1}' lastsp24.fake | sort -u | awk'BEGIN{print "The list of people who worked on Sunday are: \n"} {print} END{print "Kudos to these people for putting in the work"}'
+  891  awk '/Sun/ {print $1}' lastsp24.fake | sort -u | awk'{print}'
+  892  awk '/Sun/ {print $1}' lastsp24.fake | sort -u | awk'{print $0}'
+  893  grep Sun lastsp24.fake | awk '{print $1}'
+  894  grep Sun lastsp24.fake | awk '{print}'
+  895  awk '/Sun/ {print $1}' lastsp24.fake | sort -u
+  896  awk '/Sun/ {print $1}' lastsp24.fake | sort -u | awk '{print}'
+
+//Task 2
+********************************************************************************************************************************
+  897  awk '/Sun/ {print $1}' lastsp24.fake | sort -u | awk 'BEGIN{print "The list of people who worked on Sunday are:"} {print} END{print "Kudos to these people for putting in the work"}'
+********************************************************************************************************************************
+
+  898  vi Assignment3.txt 
+  899  awk '/Sun/ {print $1}' lastsp24.fake | sort -u | awk 'BEGIN{print "The list of people who worked on Sunday are:"} {print} END{print "Kudos to these people for putting in the work"}' >> Assignment3.txt 
+  900  vi Assignment3.txt 
+  901  cat lastsp24.fake 
+  902  awk '{print $6}' lastsp24.fake 
+  903  awk '{print $7}' lastsp24.fake 
+  904  awk '$7 >= 23 && $7 <=4 {print $7}' lastsp24.fake 
+  905  awk '$7 >= 23 || $7 <=4 {print $7}' lastsp24.fake 
+  906  awk '$7 >= 23 || $7 <= 4 {print $7}' lastsp24.fake 
+  907  awk '$7 <= 4 {print $7}' lastsp24.fake 
+  908  awk '{print $7}' lastsp24.fake | awk -F : '{print $1}'
+  909  awk '{print $7}' lastsp24.fake | awk -F : '$1 >= 23 || $1 <= 04 {print $1}'
+  910  cat lastsp24.fake 
+  911  awk '$7 >= 23:00 || $7 <= 04:00 {print $0}' lastsp24.fake 
+  912  awk '{split($7,time,":"); hour = time[1] + 0; if (hour >= 23 || hour <= 4) {print;}}' lastsp24.fake 
+  913  awk '$7 != "" {print $0} la
+  914  awk '{split($7,time,":"); hour = time[1] + 0; if (hour >= 23 || hour <= 4) {print;}}' lastsp24.fake 
+  915  awk '$3 != "" {print $0}' lastsp24.fake 
+  916  awk -F'[]' '$3 != "" {print $0}' lastsp24.fake 
+  917  awk -F'[ ]' '$3 != "" {print $0}' lastsp24.fake 
+  918  awk '$7 != '-' {print $0}' lastsp24.fake 
+  919  awk '$7 != "-" {print $0}' lastsp24.fake 
+  920  awk 'NF == 10' lastsp24.fake 
+  921  awk 'NF == 10' lastsp24.fake | wc -l
+  922  awk 'NF == 9' lastsp24.fake | wc -l
+  923  cd cs131/Assignment3
+  924  ls
+  925  cat lastsp24.fake 
+  926  awk 'NF=7' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if (hour >= 23 || hour <= 4) {print $1}}' 
+  927  awk 'NF=7' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if (hour >= 23 || hour <= 4) {print $0}}' 
+  928  awk 'NF=10' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if (hour >= 23 || hour <= 4) {print $0}}' 
+  929  awk 'NF = 10' lastsp24.fake 
+  930  awk 'NF = 7' lastsp24.fake 
+  931  awk 'print NF' lastsp24.fake 
+  932  awk 'NF' lastsp24.fake 
+  933  awk 'NF >= 10' lastsp24.fake 
+  934  awk 'NF >= 10' lastsp24.fake | wc -l
+  935  awk 'NF < 10' lastsp24.fake | wc -l
+  936  awk 'BEGIN {count = 0} $3 == "" {count++} END {print count}' lastsp24.fake 
+  937  awk 'BEGIN {count = 0} $3 == "" {print; count++} END {print count}' lastsp24.fake 
+  938  awk 'BEGIN {count = 0} $3 == " " {print; count++} END {print count}' lastsp24.fake 
+  939  awk 'BEGIN {count = 0} $3 ~ /^[]*$/ {print; count++} END {print count}' lastsp24.fake 
+  940  awk 'BEGIN {count = 0} $3 ~ /^"[]*"$/ {print; count++} END {print count}' lastsp24.fake 
+  941  awk 'BEGIN {count = 0} $3 ~ /^["][]*["]$/ {print; count++} END {print count}' lastsp24.fake 
+  942  awk '$3 == " " {print}' lastsp24.fake 
+  943  awk'NF == 10' lastsp24.fake 
+  944  awk 'NF == 10' lastsp24.fake 
+  945  awk 'NF == 10' lastsp24.fake || awk '{split ($7, time, ":"); hour = time[1] + 0; if(hour >=23 || hour <=4) { print;}}' 
+  946  awk 'NF == 10' lastsp24.fake || awk '{split ($7, time, ":"); hour = time[1] + 0; if(hour >= 23 || hour <= 4) { print;}}' 
+  947  awk 'NF == 10' lastsp24.fake || awk '{split($7, time, ":"); hour = time[1] + 0; if(hour >= 23 || hour <= 4) { print;}}' 
+  948  awk 'NF == 10' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if(hour >= 23 || hour <= 4) { print;}}' 
+  949  awk 'NF == 10' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if(hour >= 23 || hour <= 4) { print;}}' | awk '{print $1}' | sort -u 
+  950  vi Assignment3.txt 
+  
+//Task 3
+********************************************************************************************************************************************************
+  951  awk 'NF == 10' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if(hour >= 23 || hour <= 4) { print;}}' | awk '{print $1}' | sort -u | awk 'BEGIN{print "Night Owls List:"} {print} END{print "Night Owls are dope. Please ensure you get enough sleep though."}'
+********************************************************************************************************************************************************
+
+  952  vi Assignment3.txt 
+  953  awk 'NF == 10' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if(hour >= 23 || hour <= 4) { print;}}' | awk '{print $1}' | sort -u | awk 'BEGIN{print "Night Owls List:"} {print} END{print "Night Owls are dope. Please ensure you get enough sleep though."}' >> Assignment3.txt 
+  954  vi Assignment3.txt 
+  955  cd cs131/Assignment3
+  956  awk 'NF == 10' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if(hour >= 23 || hour <= 4) { print;}}' | awk '{print $1}' | sort | uniq 
+  957  awk 'NF == 10' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if(hour >= 23 || hour <= 4) { print;}}' | awk '{print $1}' | sort | uniq | wc -l
+  958  awk 'NF == 10' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if(hour >= 23 || hour <= 4) { print;}}' | awk '{print $1}' | sort -u | wc -l
+  959  vi Assignment3.txt
+
+//Task 4
+******************************************************************************************************************************************************** 
+  960  awk 'NF == 10' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if(hour >= 5 && hour <= 9) { print;}}' | awk '{print $1}' | sort -u | awk 'BEGIN{print "Early Birds List:"} {print} END{print "Early Birds are dope. Please ensure you get enough sleep though."}' >> Assignment3.txt 
+********************************************************************************************************************************************************
+
+
+  961  vi Assignment3.txt 
+  962  awk 'NF == 10' lastsp24.fake | awk '{split($7, time, ":"); hour = time[1] + 0; if(hour >= 5 && hour <= 9) { print;}}'
+  963  cat lastsp24.fake 
+  964  awk '/t*/ {print $0}' lastsp24.fake 
+  965  awk '$1 = t* {print $0}' lastsp24.fake 
+  966  awk '$1 = "t*" {print $0}' lastsp24.fake 
+  967  awk '$1 ~ /^t/ {print $0}'
+  968  awk '$1 ~ /^t/ {print $0}' lastsp24.fake 
+  969  grep t* lastsp24.fake 
+  970  awk '{print $1}' lastsp24.fake  | grep 't*'
+  971  awk '{print $1}' lastsp24.fake  | grep -h  '^t'
+  972  awk '{print $1}' lastsp24.fake  | grep -h  '^t' | sort
+  973  vi Assignment3.txt 
+  974  awk '$1 ~ /^t/ {print $0}' lastsp24.fake 
+  975  awk '$1 ~ /^t/ {print $0}' | sort | uniq
+  976  awk '$1 ~ /^t/ {print $0}' lastsp24.fake | sort | uniq
+
+//Task 5
+********************************************************************************************************************************************************
+  977  awk '$1 ~ /^t/ {print $1}' lastsp24.fake | sort | uniq
+********************************************************************************************************************************************************
+
+  978  awk '$1 ~ /^t/ {print $1}' lastsp24.fake | sort | uniq >> Assignment3.txt 
+  979  vi Assignment3.txt 
+  980  cat passwd.fake 
+  981  awk -F ':' 'if($1 ~ /^a/ && $3%2 == 0) {print $1}' passwd.fake 
+  982  awk -F ':' '{if($1 ~ /^a/ && $3%2 == 0) {print $1}}' passwd.fake 
+
+//Task 6
+********************************************************************************************************************************************************
+  983  awk -F ':' '{if($1 ~ /^a/ && $3%2 == 0) {print $1}}' passwd.fake | sort | uniq
+********************************************************************************************************************************************************
+
+  984  cat passwd.fake 
+  985  awk -F ':' '{if($1 ~ /^a/ && $3%2 == 0) {print $1}}' passwd.fake | sort | uniq >> Assignment3.txt 
+  986  vi Assignment3.txt 
+  987  sed -n 's/[a-zA-Z0-9]//g; /./p' passwd.fake 
+  988  sed -n 's/[a-zA-Z0-9]//g; /./p' passwd.fake | wc -l
+  989  cat passwd.fake  | wc -l
+
+//Task 7
+********************************************************************************************************************************************************
+  990  sed -n 's/[a-zA-Z0-9]//g; /./p' passwd.fake | sort -u
+********************************************************************************************************************************************************
+

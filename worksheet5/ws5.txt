@@ -1,0 +1,4 @@
+The number of entries in worksheet5/UnitedStates/Music.txt is: 73 entries 
+The number of entries in worksheet5/UnitedStates/Entertainment.txt is: 68 entries
+The number of entries in worksheet5/UnitedStates/Gaming.txt is: 26 entries
+The number of entries in worksheet5/UnitedStates/Comedy.txt is: 22 entries
